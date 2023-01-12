@@ -1,0 +1,35 @@
+.newsletter-form-elements {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.5rem;
+  input {
+    border-radius: 0.25rem;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-shadow);
+    padding: 1rem 1.5rem;
+    &.submit {
+      text-transform: uppercase;
+      --tw-bg-opacity: 1;
+      background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+      transition: transform 0.25s linear;
+      cursor: pointer;
+      &:hover {
+        transform: scaleX(1.05);
+      }
+    }
+    &.email {
+      --tw-bg-opacity: 1;
+      background-color: rgba(51, 65, 85, var(--tw-bg-opacity));
+    }
+  }
+
+  @media(min-width:900px) {
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 1.5rem;
+  }
+}

@@ -1,0 +1,7 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  .rounded-full {
+    display: none;
+  }
+}

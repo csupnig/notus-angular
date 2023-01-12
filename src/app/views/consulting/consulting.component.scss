@@ -1,0 +1,123 @@
+.consulting-intro {
+  p, ul {
+    margin-bottom: 1rem;
+    i {
+      margin-right: 5px;
+    }
+  }
+  margin-bottom: 5rem;
+}
+.book-container-info {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.book-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2rem;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 3rem;
+  place-items: center;
+  margin: 3rem 0;
+  @media(min-width:900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  > div {
+    text-align: center;
+    padding: 3rem;
+    a {
+      margin-top: 1rem;
+      text-transform: uppercase;
+      --tw-bg-opacity: 1;
+      background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+      border-radius: 0.25rem;
+      --tw-text-opacity: 1;
+      color: rgba(255, 255, 255, var(--tw-text-opacity));
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      box-shadow: var(--tw-shadow);
+      padding: 1rem 1.5rem;
+      display: inline-block;
+
+      transition: transform 0.25s linear;
+      &:hover {
+        transform: scaleX(1.05);
+        transform-origin: center;
+      }
+    }
+  }
+}
+.consulting-works {
+  padding: 0 1rem;
+  .flex.flex-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media(min-width:900px) {
+      grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    }
+    grid-auto-rows: 1fr;
+    place-items: center;
+    .w-full {
+      max-width: 10rem;
+      margin-bottom: 2rem;
+      .rounded-full {
+        width: 3.5rem;
+        height: 3.5rem;
+        background: #fff;
+
+        .absolute {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+    }
+    .line {
+      display: none;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      @media(min-width:900px) {
+        display: block;
+      }
+      svg.absolute {
+        width: 140px;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+
+.modal-overlay {
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  .modal-footer {
+    padding: 1.25rem;
+  }
+  .modal-body {
+    padding: 1.25rem;
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0.25;
+}

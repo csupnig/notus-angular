@@ -1,0 +1,28 @@
+/*
+      __
+     /\ \             __
+  ___\ \ \___   _ __ /\_\    ____
+ /'___\ \  _ `\/\`'__\/\ \  /',__\
+/\ \__/\ \ \ \ \ \ \/ \ \ \/\__, `\
+\ \____\\ \_\ \_\ \_\  \ \_\/\____/
+ \/____/ \/_/\/_/\/_/   \/_/\/___/
+                          ...did this!
+
+*/
+
+
+
+/* TEAM */
+
+Name: Christopher Supnig.
+Contact: blog@supnig.com, www.supnig.com
+Twitter: @csupnig
+Location: Vienna, Austria.
+
+/* SITE */
+URL: www.supnig.com
+Language: en
+Standards: HTML5, CSS3
+Style: bootstrap / responsive
+Components: jQuery, Google Analytics
+Software: Node.js, Express, mongodb, custom blog engine

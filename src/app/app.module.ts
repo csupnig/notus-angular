@@ -47,6 +47,16 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
+import {ImprintComponent} from './views/imprint/imprint.component';
+import {CookieContentComponent} from './views/cookie/cookie.component';
+import {NewsletterComponent} from './components/newsletter/newsletter.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { ConsultingComponent } from './views/consulting/consulting.component';
+import { ZerotosaasComponent } from './views/zerotosaas/zerotosaas.component';
+import { NldownloadComponent } from './components/nldownload/nldownload.component';
+import { NowComponent } from './views/now/now.component';
+import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
 
 @NgModule({
   declarations: [
@@ -84,8 +94,18 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     IndexComponent,
     LandingComponent,
     ProfileComponent,
+    ImprintComponent,
+    CookieContentComponent,
+    NewsletterComponent,
+    ProjectsComponent,
+    IntroComponent,
+    ConsultingComponent,
+    ZerotosaasComponent,
+    NldownloadComponent,
+    NowComponent,
+    CookieBannerComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

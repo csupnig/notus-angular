@@ -206,7 +206,7 @@ notus-angular
 │   │   │   │       └── index-navbar.component.ts
 │   │   │   └── sidebar
 │   │   │       ├── sidebar.component.html
-│   │   │       └── sidebar.component.ts
+│   │   │       └── newsletter.component.ts
 │   │   ├── layouts
 │   │   │   ├── admin
 │   │   │   │   ├── admin.component.html
@@ -237,7 +237,7 @@ notus-angular
 │   │       │       └── register.component.ts
 │   │       ├── index
 │   │       │   ├── index.component.html
-│   │       │   └── index.component.ts
+│   │       │   └── cookie.component.ts
 │   │       ├── landing
 │   │       │   ├── landing.component.html
 │   │       │   └── landing.component.ts

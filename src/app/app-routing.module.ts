@@ -19,10 +19,15 @@ import { RegisterComponent } from "./views/auth/register/register.component";
 import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
+import {ImprintComponent} from './views/imprint/imprint.component';
+import {CookieContentComponent} from './views/cookie/cookie.component';
+import {ConsultingComponent} from './views/consulting/consulting.component';
+import {ZerotosaasComponent} from './views/zerotosaas/zerotosaas.component';
+import {NowComponent} from './views/now/now.component';
 
 const routes: Routes = [
   // admin views
-  {
+  /*{
     path: "admin",
     component: AdminComponent,
     children: [
@@ -45,13 +50,20 @@ const routes: Routes = [
   },
   // no layout views
   { path: "profile", component: ProfileComponent },
-  { path: "landing", component: LandingComponent },
+  { path: "landing", component: LandingComponent },*/
+  { path: "imprint", component: ImprintComponent },
+  { path: "cookie", component: CookieContentComponent },
+  { path: "consulting", component: ConsultingComponent },
+  { path: "zerotosaas", component: ZerotosaasComponent },
+  { path: "now", component: NowComponent },
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabled'
+})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

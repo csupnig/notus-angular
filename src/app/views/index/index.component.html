@@ -71,7 +71,7 @@
         >
           <img
             alt="..."
-            src="/assets/img/IMG_2461.jpeg"
+            src="/assets/img/IMG_2461-min.jpeg"
             class="w-full align-middle rounded-t-lg"
           />
           <blockquote class="relative p-8 mb-4">
@@ -86,9 +86,9 @@
                 class="text-red-600 fill-current"
               ></polygon>
             </svg>
-            <h4 class="text-xl font-bold text-white">
+            <h1 class="text-xl font-bold text-white">
               Hi there, I am Chris.
-            </h4>
+            </h1>
             <p class="text-md font-light mt-2 text-white">
               I like creating things. Running businesses, mostly on the internet and without external investments. Interested in everything that creates value and improves lives.
             </p>
@@ -104,11 +104,7 @@
   <div class="container mx-auto">
     <app-projects></app-projects>
   </div>
-  <div class="container mx-auto">
-    <p class="text-blueGray-700 fill-current pt-32 pb-32">
-      YOU want to start doing BUSINESS together or have an interesting project, that you want me to have a look at? Feel FREE to reach out and I'll get back to you. Or check out the <a [routerLink]="['/consulting']">consulting</a> section and see how I can HELP you there.
-    </p>
-  </div>
+
 </section>
 
 
@@ -134,24 +130,7 @@
   </div>
 
   <div class="container mx-auto">
-    <div
-      class="flex flex-wrap justify-center bg-white shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10"
-    >
-      <div class="w-full text-center lg:w-8/12">
-        <p class="text-4xl text-center">
-          <span role="img" aria-label="love"> 😍 </span>
-        </p>
-        <h3 class="font-semibold text-3xl">Do you want updates from me?</h3>
-        <p class="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
-          I occasionally send out an email with updates about my journey or when I have an interesting story to share.
-        </p>
-        <div class="sm:block flex flex-col mt-10">
-
-          <app-newsletter></app-newsletter>
-        </div>
-        <div class="text-center mt-16"></div>
-      </div>
-    </div>
+    <app-newsletter></app-newsletter>
   </div>
 </section>
 <app-footer></app-footer>

@@ -19,6 +19,7 @@ p a {
   font-style: italic;
   display: inline-block;
   position: relative;
+  border-bottom: 1px dashed rgba(100, 116, 139, var(--tw-text-opacity));
   &:before {
     content: "";
     position: absolute;
@@ -26,7 +27,7 @@ p a {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #D2D2D6;
+    background-color: rgba(100, 116, 139, var(--tw-text-opacity));
 
     transform: scaleX(0);
     transform-origin: 0% 50%;
@@ -40,6 +41,33 @@ p a {
     }
   }
 }
+
+a.cta-link {
+  margin-top: 3rem;
+  text-align: center;
+  display: block;
+  border-radius: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-shadow);
+  padding: 1rem 1.5rem;
+
+    text-transform: uppercase;
+    --tw-bg-opacity: 1;
+    background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+    transition: transform 0.25s linear;
+  transform-origin: bottom center;
+    cursor: pointer;
+    &:hover {
+      transform: scaleX(1.05);
+    }
+
+}
+
 .container {
   >p {
     padding-left: 1rem;

@@ -67,7 +67,13 @@
         width: 3.5rem;
         height: 3.5rem;
         background: #fff;
-
+        @media(min-width:900px) {
+          width: 5rem;
+          height: 5rem;
+          .w-12 {
+            width: 4rem;
+          }
+        }
         .absolute {
           left: 50%;
           top: 50%;

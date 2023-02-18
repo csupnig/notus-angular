@@ -25,7 +25,8 @@
               "src/humans.txt",
               "src/robots.txt",
               "src/google90d75c7d5b5df82c.html",
-              "src/assets"
+              "src/assets",
+              "src/.well-known"
             ],
             "styles": [
               "src/styles.scss",

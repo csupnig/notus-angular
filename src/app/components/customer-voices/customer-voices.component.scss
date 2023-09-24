@@ -1,4 +1,4 @@
-.project-section {
+.customer-voices {
   --tw-bg-opacity: 1;
   background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
   border-radius: 0.5rem;
@@ -16,7 +16,7 @@
 
   }
 
-  .projects {
+  .voices {
 
     display: grid;
     grid-template-columns: 1fr;
@@ -29,7 +29,7 @@
       padding: 1rem 1.5rem;
 
       img {
-        max-height: 4rem;
+
         opacity: 0.8;
       }
 

@@ -57,11 +57,13 @@ import { ZerotosaasComponent } from './views/zerotosaas/zerotosaas.component';
 import { NldownloadComponent } from './components/nldownload/nldownload.component';
 import { NowComponent } from './views/now/now.component';
 import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
+import {CustomerVoicesComponent} from './components/customer-voices/customer-voices.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
+    CustomerVoicesComponent,
     CardBarChartComponent,
     CardLineChartComponent,
     IndexDropdownComponent,
